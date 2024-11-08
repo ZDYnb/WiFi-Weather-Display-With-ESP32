@@ -19,7 +19,7 @@ byte table[10] = {
   B10110110, B10111110, B11100000, B11111110, B11110110
 };
 
-void setup() {
+void setupDisplayModule() {
   Serial.begin(115200);
   pinMode(D4, OUTPUT);
   pinMode(D3, OUTPUT);

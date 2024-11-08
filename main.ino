@@ -1,7 +1,3 @@
-#include "TemperatureReceiver.h"
-#include "DisplayModule.h"
-#include "LEDModule.h"
-
 void setup() {
   Serial.begin(115200);
   setupTemperatureReceiver(); 
@@ -11,6 +7,7 @@ void setup() {
 
 void loop() {
   int temperature = getTemperatureFromAPI();
+  String condition = getConditionFromAPI();
   displayTemperature(temperature);
-  changeLEDColor(temperature);  
+  changeLEDColor(condition);  
 }
