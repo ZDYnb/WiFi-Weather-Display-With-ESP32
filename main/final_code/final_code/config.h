@@ -5,7 +5,7 @@
 
 
 #define WIFI_SSID "PSU-IoT"
-#define WIFI_PASS "ivanmperex14$"
+#define WIFI_PASS ""
 
 #include "AdafruitIO_WiFi.h"
 
